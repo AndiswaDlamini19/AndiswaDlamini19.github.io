@@ -1,0 +1,102 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: linear-gradient(135deg, #f0f0f0, #ffffff);
+    color: #333;
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+body.dark-mode {
+    background-color: #010007;
+    color: #f0f0f0;
+}
+.bgimage {
+    height:100vh;
+    background:url(../images/PImage.gif);
+    background-size:cover;
+    position:relative;
+}
+header {
+    background-image:url(../images/shootingStar.gif);
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.5s ease;
+}
+.background-image {
+    height:100vh;
+    background: url(../images/Stars.jpg);
+    background-size:cover;
+    position:relative;
+}
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 16px 30px rgba(0, 0, 0, 0.2);
+}
+project-card:hover::before {
+    transform: scale(4);
+    transition: transform 0.5s ease;
+}
+
+.project-card h4 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    z-index: 2;
+    position: relative;
+}
+
+.project-card p {
+    z-index: 2;
+    position: relative;
+}
+/* Dark Mode Toggle Styles */
+.dark-mode-toggle {
+    cursor: pointer;
+    /* background-color: #4CAF50; */
+    /* padding: 10px 15px; */
+    border: none;
+    /* border-radius: 5px; */
+    color: #fff;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.dark-mode-toggle:hover {
+    background-color: #fff;
+    color: #4CAF50;
+}
+
+ nav ul li{
+   display:0 ;
+    margin: 0 15px;
+ }
+ nav ul li a{
+    color: #0066ff;
+    text-decoration: none;
+ }
+ section{
+    padding: 20px;
+ }
+
+ #user,#project,#contact{
+    margin: 20px ;
+}
+
+projects{
+    background-color: white;
+    padding: 15px;
+    margin-bottom: 10px;
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+}
+
+@media (max-width: 600px) {
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+}
+html {
+    scroll-behavior: smooth;
+}

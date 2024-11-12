@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+   <meta name="keywords" content=""> 
+   <meta name="author" content="Andiswa">
+    <title>Portfolio</title>
+    <link rel="stylesheet"href="stylesheet/main">
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css"/> <!-- AOS for animations -->
+</head>
+</head>
+<body>
+    <header>
+        <h1> Andiswa Dlamini Jr. software developer.</h1>
+        <nav>
+            <ul>
+                <li><a href="#about.html">Home</a></li>
+                <li><a href="#projects.html">Projects</a></li>
+                <li><a href="#contact.html">Contact</a></li>
+                <li><button id="toggle-darkmode"> Dark Mode</button></li> <!-- Dark Mode Toggle -->
+            </ul>
+        </nav>
+    </header>
+    <!-- <section id="user" data-aos="fade-up">
+        <h2>Hi, I'm Andiswa Dlamini, a junior web developer who loves turning ideas into reality through code. Whether it's crafting websites with HTML & CSS, adding magic with JavaScript, building robust apps with Python, or developing efficient backend systems with C#, I'm all about creating interactive and dynamic experiences!
+
+            With C#, I enjoy working on backend solutions, building APIs, and developing scalable applications that enhance user experiences.</h2>
+    </section> -->
+    <section class="bgimage" id="home">
+        <div class="container-fluid">
+            <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 hero-text">
+                <h2 class="hero_title">Hi, it's A.Dlamini</h2>
+                <p class="hero_desc">I'm Andiswa Dlamini, junior software developer who loves turing  ideasinto reality through code.</p>
+            </div>
+            </div>
+        </div>
+    </section>
+
+     <section id="projects" data-aos="zoom-in">
+        <h3>Projects</h3> 
+        <div class="project-grid">
+            <div class="project-card" onmouseover="this.style.transform='scale(1.1)';" onmouseout="this.style.transform='scale(1)';">
+                <h4>Project 1</h4>
+                <p>Interactive website using HTML, CSS, and JavaScript</p>
+            </div>
+            <div class="project-card" onmouseover="this.style.transform='scale(1.1)';" onmouseout="this.style.transform='scale(1)';">
+                <h4>Project 2</h4>
+                <p>Python web app with Flask and RESTful API</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" data-aos="fade-up">
+        <h2>Contact</h2>
+        <p>Email: <a href="mailto:ndii.swa19@gmail.com">ndii.swa19@gmail.com</a></p>
+    </section>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init(); // Initialize AOS animations
+
+        // Dark Mode Toggle
+        const toggleButton = document.getElementById('toggle-darkmode');
+        toggleButton.addEventListener('click', () => {
+            document.body.classList.toggle('dark-mode');
+        });
+    </script>
+
+<style>
+    /* Global Styles */
+    body {
+        font-family: Arial, sans-serif;
+        background: linear-gradient(135deg, #f5f5f5, #ffffff);
+        color: #333;
+        transition: background 0.5s, color 0.5s;
+    }
+
+    /* Dark Mode Styles */
+    body.dark-mode {
+        background: #333;
+        color: #f5f5f5;
+    }
+
+    Header Styles
+    header {
+        background-color: #4CAF50;
+        padding: 20px;
+        text-align: center;
+    }
+
+    nav ul {
+        list-style-type: none;
+        padding: 0;
+    }
+
+    nav ul li {
+        display: inline;
+        margin-right: 20px;
+    }
+
+    nav ul li a {
+        text-decoration: none;
+        color: #fff;
+        transition: color 0.3s;
+    }
+
+    nav ul li a:hover {
+        color: #f5f5f5;
+    }
+
+    /* Project Styles */
+    .project-grid {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 20px;
+    }
+
+    .project-card {
+        width: 200px;
+        height: 150px;
+        background-color: #f9f9f9;
+        padding: 10px;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease;
+    }
+
+    /* Contact Styles */
+    #contact {
+        padding: 20px;
+        background-color: #eee;
+        text-align: center;
+    }
+</style>
+</body>
+</html>
